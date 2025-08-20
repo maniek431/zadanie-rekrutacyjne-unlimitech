@@ -186,6 +186,7 @@
   align-items: center;
   justify-content: center;
   min-width: 150px;
+  gap: 15px;
 }
 .banner-header-text {
   color: #FFFFFF;
@@ -876,18 +877,19 @@ input[type="email"] {
   font-family: 'Inter';
   font-size: 14px;
   color: #292929;
+  gap: 15px;
 }
 .left-menu-item:hover {
   background-color: #0068FF;
 }
 .left-menu-item-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Inter';
+  gap: 15px;
   font-size: 14px;
   color: #292929;
-}
-.img-submenu {
-  width: 36px;
-  height: 36px;
 }
 .left-menu {
   width: 332px;
@@ -924,11 +926,6 @@ input[type="email"] {
   padding: 20px 0 0 20px;
   background-color: #FAFAFA;
   flex-basis: 70%;
-}
-.img-submenu {
-  width: 403px;
-  height: 520px;
-  border-radius: 8px;
 }
 .submenu-list {
   display: flex;
@@ -967,6 +964,22 @@ input[type="email"] {
   font-weight: 400;
   display: block;
   height: 20px;
+}
+.img-banner-header {
+  height: 16px;
+  width: 16px;
+}
+.img-submenu-buty {
+  width: 403px;
+  height: 520px;
+  border-radius: 8px;
+}
+.submenu-buty {
+  margin-left: -200px;
+}
+.img-submenu {
+  width: 46px;
+  height: 26px;
 }
 .nav-menu {
   background-color: #FFFFFF;
@@ -1510,7 +1523,7 @@ input[type="search"] {
   min-height: 1400px;
 }
 .container-slider {
-  display: 'grid' !important;
+  display: grid!important;
   min-width: 1400px;
   max-height: 520px!important;
   align-items: center;
