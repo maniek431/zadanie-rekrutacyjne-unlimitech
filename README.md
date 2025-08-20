@@ -35,12 +35,3 @@ Przed rozpoczęciem upewnij się, że masz zainstalowane następujące oprogramo
     make css
     ```
 
-2.  **Obserwuj zmiany (w trakcie developmentu):**
-
-    ```bash
-    make watch
-    ```
-
-    To polecenie uruchamia obserwatora, który automatycznie rekompiluje pliki LESS po każdej zmianie.
-
-
