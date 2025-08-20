@@ -1,0 +1,275 @@
+@import url('https://fonts.cdnfonts.com/css/archivo');
+@import url('https://fonts.cdnfonts.com/css/inter');
+@import "variables.less";
+
+
+.slider-title
+{
+    font-family:@font-family;
+    font-size:40px;
+    font-weight: 900;
+    color: #FFFFFF;
+
+}
+.slider-button
+{
+    display:@display-flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    font-family: @font-family;
+    border:1px solid #FFFFFF;
+    border-radius: 8px;
+    color:#fff;
+    font-weight: 700;
+    background-color: transparent;
+    width:131px;
+    height:40px;
+
+
+}
+.slider-description
+{
+    font-size: 14px;
+    color: #EEEEEE;
+    font-weight: 500;
+
+}
+.gallery-slider-content
+{
+  display:@display-flex!important;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.image-item-slider
+{
+    display: @display-flex!important;
+    flex-direction: row!important;
+    justify-content: space-between!important;
+    min-width:1400px;
+    max-height: 520px!important;
+    align-items: center;
+    justify-content: center;
+    background-image: url(C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slider1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.slick-initialized 
+{
+    min-height:520px;
+}
+
+.slick-slide{
+    min-width:1400px;
+    min-height:520px;
+}
+.slick-slider
+{
+    min-height:1400px;
+}
+.container-slider
+{
+    display: grid!important;
+    min-width:1400px;
+    max-height: 520px!important;
+    align-items: center;
+    justify-content: center;
+    
+}
+.slick-slider{
+    min-width:1400px;
+    min-height: 520px;
+}
+.slider-arrow-img{
+  width:16px;
+  height: 13px;
+}
+
+.slick-dots {
+  display: @display-flex!important;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -30px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  height: 12px;
+  width: 16px;
+  li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 16px;
+      height: 16px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+
+      &:before {
+        font-family: 'slick';
+        font-size: 0px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        content: ''; 
+        text-align: center;
+        background-image: url('C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slick-dots-active.png'); 
+        background-size: cover;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+
+    &.slick-active button:before {
+      background-image: url('C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slick-dots-unactive.png'); 
+      opacity: 0.75;
+    }
+  }
+}
+
+
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  background:none;
+  border: 1px solid #fff; 
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+}
+
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  background:none;
+  border: 1px solid #fff; 
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+}
+
+.slick-prev {
+  left: 10px; 
+}
+
+.slick-next {
+  right: 10px; 
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+
+
+
+.left-content-slider
+{
+    display:@display-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 500px;
+    padding: 20px;
+}
+.right-content-slider
+{
+    display:@display-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 500px;
+    padding: 20px;
+}
+.container-gallery
+{
+
+    padding:20px;
+}
+
+@media (max-width:991px)
+{
+  .image-item-slider
+  {
+      flex-direction: column!important;
+      min-width: 100%;
+      max-height: none!important;
+  }
+  .container-slider
+  {
+    min-width: 100%!important;
+    width:100%!important;
+    max-height: 520px;
+    grid-template-columns: 1fr!important;
+  }
+  .right-content-slider
+  {
+    flex-direction: column!important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .slick-next
+  {
+    display: none;
+  }
+  .slick-prev
+  {
+    display: none;
+  }
+  .slick-slide{
+    min-width:100%!important;
+    min-height:100%!important;
+  }
+  .slick-slider
+  {
+    min-height: 100%!important;
+    min-width: 100%!important;
+  }
+  .gallery-slider-content {
+    display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    width: 100%;
+  }
+  .image-item-slider {
+    flex: 0 0 100%; 
+    scroll-snap-align: start; 
+    width: 100%; 
+  }
+}

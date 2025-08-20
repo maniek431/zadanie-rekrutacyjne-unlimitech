@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "less.js": "^3.0.5"
+  },
+  "scripts": {
+    "less": "lessc .less/styles.less .css/styles.css"
+  }
+}

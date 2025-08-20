@@ -1,0 +1,232 @@
+@import url('https://fonts.cdnfonts.com/css/archivo');
+@import url('https://fonts.cdnfonts.com/css/inter');
+@import "variables.less";
+.img-specials
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-gallery
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.specials-text-promo
+{
+    color:#292929;
+    font-family:@font-family;
+    font-size: 32px;
+}
+.specials-link
+{
+    display: @display-flex;
+    color:#292929;
+    font-family:@font-family;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 700px;
+
+}
+.specials-header
+{
+    display: @display-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    min-width: 1400px;
+}
+.specials-title
+{
+    display: @display-flex;
+    font-family: @font-family;
+    flex-basis: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 700px;
+    gap:15px;
+    padding:25px;
+}
+.specials-item
+{
+    
+    justify-content:flex-start;
+    align-items: center;
+}
+.specials-item-description
+{
+ color:#595959;
+ font-family:@font-family;
+ font-size: 13px;
+ font-weight: 400;
+}
+.specials-item-price-regular
+{
+    color:#0068FF;
+    font-family:@font-family;
+    font-size: 15px;
+    font-weight: 700;
+}
+.specials-item-title
+{
+    color:#292929;
+    font-family:@font-family;
+    font-size: 16px;
+    font-weight: 600;
+}
+.img-specials
+{
+
+    width:342px;
+    height: 456px;
+    border-radius:16px;
+}
+.container-search-items
+{
+    display: @display-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:15px;
+}
+.container-specials-mobile 
+{
+    display:none;
+}
+
+.container-gallery-mobile
+{
+    display:none;
+}
+
+@media (max-width: 991px) {
+    .container-specials-mobile 
+    {
+        display: @display-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.container-specials
+{
+    display: @display-flex;
+    width:100%;
+    align-items: center;
+    gap: 20px;
+    flex-direction:column;
+}
+.price-promo
+{
+    display:@display-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:6px;
+}
+.specials-item-price-promo
+{
+    display: @display-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C40837;
+    border-radius:2px;
+    height:20px;
+    width:71px;
+    font-family: @font-family;
+    color:#fff;
+    font-weight:700;
+    
+}
+.specials-item-price-promo-text
+{
+    display: @display-flex;
+    align-items: center;
+    justify-content: flex-start;
+    color:#595959;
+    font-family: @font-family;
+    font-size: 12px;
+    font-weight: 400;
+}
+.bestseller-banner
+{
+    display:@display-flex;
+    background-color:#A70584;
+    position: absolute;
+    margin-top:10px;
+    margin-left:5px;
+    border-radius: 2px;
+    width: 84px;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:@font-family;
+    font-size: 12px;
+    font-weight: 700;
+    color:#fff;
+}
+.new-banner
+{
+    display:@display-flex;
+    background-color:#36B588;
+    position: absolute;
+    margin-top:40px;
+    border-radius: 2px;
+    margin-left:5px;
+    width: 65px;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:@font-family;
+    font-size: 12px;
+    font-weight: 700;
+    color:#fff;
+}
+.specials-banner
+{
+    display:@display-flex;
+    position: absolute;
+    margin-top:10px;
+    margin-left:5px;
+    background-color:#C40837;
+    border-radius: 2px;
+    width: 79px;
+    height:20px;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:@font-family;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 10;
+}
+.container-specials-items
+{
+    display: @display-flex;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+}
+.specials-text-promo-promocje
+{
+    font-family: @font-family;
+    color:#0068FF;
+    font-weight:800;
+    font-size:32px;
+}
+.specials-text-promo
+{
+    font-family:@font-family;
+    color:#292929;
+    font-weight:400;
+    font-size:16px;
+
+
+}

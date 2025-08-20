@@ -1,0 +1,119 @@
+@import 'variables.less';
+
+.nav-header-mobile {
+    display: none;
+}
+
+.hamburger-menu {
+    font-size: 30px;
+    background: none;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+@media (max-width: 991px) {
+    .banner-header {
+        display: @display-flex;
+        background-color: #0068FF;
+        padding: 20px;
+        height: 38px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-header-item {
+        display: none;  
+    }
+
+    .hamburger-menu {
+        display: block; 
+        font-size: 30px;
+        background: none;
+        color: #333;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .nav-header-item {
+        display: block;  
+    }
+
+    .nav-header-mobile {
+        display: block;  
+        }
+
+
+    .container-gallery-mobile {
+        display: @display-flex;
+    }
+
+    .container-gallery {
+        display: none;
+    }
+
+    .container-specials {
+        display: none;
+    }
+
+    .container-specials-mobile {
+        display: block;
+    }
+
+    .mobile-footer-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mobile-footer-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .arrow {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: #333 transparent transparent transparent;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer-dropdown-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        background-color: #fff;
+    }
+
+    .footer-dropdown-list li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .footer-dropdown-list li a:hover {
+        background-color: #ddd;
+    }
+
+    .footer-dropdown-list.show {
+        display: block;
+    }
+
+    .mobile-footer-title.active .arrow {
+        transform: rotate(180deg);
+    }
+
+
+}
