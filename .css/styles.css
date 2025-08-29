@@ -981,180 +981,6 @@ input[type="email"] {
   width: 46px;
   height: 26px;
 }
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Medium.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-MediumItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo[wdth,wght].woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-SemiBoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Italic[wdth,wght].woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Bold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-BoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter[slnt,wght].woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Thin-BETA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 100;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ThinItalic-BETA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraLight-BETA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 200;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraLightItalic-BETA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Light-BETA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-LightItalic-BETA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Medium.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-MediumItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-SemiBoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Bold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-BoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 800;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraBoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Black.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-BlackItalic.woff') format('woff');
-}
 .nav-menu {
   background-color: #FFFFFF;
   font-family: 'Inter';
@@ -1204,6 +1030,115 @@ input[type="email"] {
 }
 .cart-overlay.active {
   display: block;
+}
+.container-footer {
+  height: 400px;
+  min-width: 1400px;
+  background-color: #F6F6F6;
+}
+.footer-title-header-item {
+  color: #292929;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer-list-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px !important;
+}
+.footer-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  padding-top: 40px!important;
+}
+.mobile-footer-title {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mobile-footer-title {
+    display: block;
+    color: #292929;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+.footer-link-text {
+  font-family: flex;
+  color: #292929;
+  font-size: 13px;
+  font-weight: 400;
+  flex-direction: row ;
+  gap: 15px;
+}
+.footer-payment-social-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  padding-top: 40px!important;
+}
+.footer-title-payment-social {
+  display: flex;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 700;
+}
+.img-footer-payment {
+  width: 468px;
+  height: 32px;
+}
+.img-footer-social {
+  width: 112px;
+  height: 24px;
+}
+.footer-email-phone-icon {
+  width: 16px;
+  height: 16px;
+}
+.footer-link-text-special {
+  padding-left: 30px;
+  font-family: 'Inter';
+  color: #292929;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer-link-text-phone-email {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-family: 'Inter';
+  color: #292929;
+  font-size: 13px;
+  font-weight: 500;
+}
+.nav-header-item-menu-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.nav-header-items-bars-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .search-input {
   display: flex;
@@ -1572,7 +1507,7 @@ input[type="search"] {
   max-height: 520px!important;
   align-items: center;
   justify-content: center;
-  background-image: url(./img/slider1.png);
+  background-image: url(C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slider1.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -1649,14 +1584,14 @@ input[type="search"] {
   height: 16px;
   content: '';
   text-align: center;
-  background-image: url('./img/slick-dots-active.png');
+  background-image: url('C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slick-dots-active.png');
   background-size: cover;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  background-image: url('./img/slick-dots-unactive.png');
+  background-image: url('C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slick-dots-unactive.png');
   opacity: 0.75;
 }
 .slick-prev {
