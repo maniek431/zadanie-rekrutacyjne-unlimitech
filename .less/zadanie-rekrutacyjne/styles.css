@@ -193,25 +193,208 @@
   font-weight: 700;
   font-size: 16px;
 }
-.left-menu {
-  display: flex;
-  flex-direction: column;
-  min-width: 603px;
-  height: 332px;
-}
-.container-submenu-right {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  min-width: 403px;
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
   height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
 }
-.submenu-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.cart-drawer.active {
+  transform: translateX(0);
+}
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  gap: 15px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+.cart-overlay.active {
+  display: block;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo[wdth,wght].woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Italic[wdth,wght].woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Archivo'), url('https://fonts.cdnfonts.com/s/15550/Archivo-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter[slnt,wght].woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Thin-BETA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ThinItalic-BETA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraLight-BETA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraLightItalic-BETA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Light-BETA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-LightItalic-BETA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-ExtraBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-BlackItalic.woff') format('woff');
 }
 .nav-menu {
   background-color: #FFFFFF;
@@ -262,18 +445,6 @@
 }
 .cart-overlay.active {
   display: block;
-}
-.img-gallery-small {
-  width: 342px;
-  height: 250px;
-  border-radius: 16px;
-  padding: 15px;
-}
-.img-gallery-large {
-  width: 342px;
-  height: 429px;
-  border-radius: 16px;
-  padding: 15px;
 }
 .newsletter-banner-header {
   display: flex;
@@ -461,35 +632,6 @@
   font-weight: 700;
   font-size: 18px;
 }
-.cart-drawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  background-color: #fff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
-  padding: 20px;
-}
-.cart-drawer.active {
-  transform: translateX(0);
-}
-.cart-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  display: none;
-}
-.cart-overlay.active {
-  display: block;
-}
 .left-menu-item {
   display: flex;
   flex-direction: row;
@@ -610,11 +752,6 @@
   align-items: center;
   justify-content: center;
 }
-.banner-header-item-phone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .specials-text-promo {
   color: #292929;
   font-family: 'Inter';
@@ -687,49 +824,4 @@
   font-size: 12px;
   font-weight: 600;
   text-decoration: underline;
-}
-@media (max-width: 991px) {
-  .banner-header {
-    display: flex;
-    background-color: #0068FF;
-    padding: 20px;
-    height: 38px;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner-header-item {
-    display: none;
-  }
-  .nav-header-item {
-    display: none;
-  }
-  .nav-header-mobile {
-    display: block;
-  }
-  .container-gallery-mobile {
-    display: flex;
-  }
-  .container-gallery {
-    display: none;
-  }
-  .container-specials {
-    display: none;
-  }
-  .container-specials-mobile {
-    display: block;
-  }
-}
-.container-specials-mobile {
-  display: none;
-}
-.nav-header-mobile {
-  display: none;
-}
-.hamburger-menu {
-  font-size: 30px;
-  background: none;
-  color: #333;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
 }
