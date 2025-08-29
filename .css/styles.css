@@ -1507,7 +1507,7 @@ input[type="search"] {
   max-height: 520px!important;
   align-items: center;
   justify-content: center;
-  background-image: url(C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slider1.png);
+  background-image: url(./img/slider1.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -1584,14 +1584,14 @@ input[type="search"] {
   height: 16px;
   content: '';
   text-align: center;
-  background-image: url('C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slick-dots-active.png');
+  background-image: url('./img/slick-dots-active.png');
   background-size: cover;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  background-image: url('C:/Users/manie/Desktop/zadanie-rekrutacyjne/img/slick-dots-unactive.png');
+  background-image: url('./img/slick-dots-unactive.png');
   opacity: 0.75;
 }
 .slick-prev {
